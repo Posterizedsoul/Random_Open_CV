@@ -68,7 +68,7 @@ while True:
     if hands:
         # Find distance between fingers
         lmList = hands[0]['lmList']
-        length, _, img = detector.findDistance(lmList[8], lmList[12], img)
+        length, img = detector.findDistance(lmList[8], lmList[12], img)
         print(length)
         x, y = lmList[8]
  
